@@ -2,7 +2,7 @@
 
 ## alpine-nor
 
-Alpine image with no root user. Based on _/alpine.
+Alpine image with non root user. Based on _/alpine.
 
 ## devcontainer-base
 
