@@ -50,7 +50,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: ${{ matrix.image }}/.
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/amd64
           build-args: |
             GIT_NAME=${{ vars.GIT_NAME }}
             GIT_EMAIL=${{ vars.GIT_EMAIL }}
