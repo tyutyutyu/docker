@@ -8,7 +8,7 @@ RUN echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
 RUN echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
 RUN echo 'eval "$(pyenv init -)"' >> ~/.bashrc
 
-ARG PYTHON_VERSION=3.11.5
+ARG PYTHON_VERSION=3.12.0
 RUN ~/.pyenv/bin/pyenv install "${PYTHON_VERSION}"
 RUN ~/.pyenv/bin/pyenv global "${PYTHON_VERSION}"
 
