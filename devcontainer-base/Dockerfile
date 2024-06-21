@@ -1,5 +1,10 @@
 FROM mcr.microsoft.com/vscode/devcontainers/base:ubuntu-22.04
 
+RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
+    && apt-get -y install --no-install-recommends \
+    libsqlite3-dev \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
+
 USER vscode
 
 RUN curl https://pyenv.run | bash
