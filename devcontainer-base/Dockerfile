@@ -5,6 +5,7 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     libbz2-dev \
     libncurses-dev \
     libffi-dev \
+    liblzma-dev \
     libreadline-dev \
     libsqlite3-dev \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
