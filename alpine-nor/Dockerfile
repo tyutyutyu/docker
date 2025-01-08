@@ -1,4 +1,4 @@
-FROM alpine:3.21.0
+FROM alpine:3.21.1
 
 ARG UID=1000
 ARG GID="${UID}"
